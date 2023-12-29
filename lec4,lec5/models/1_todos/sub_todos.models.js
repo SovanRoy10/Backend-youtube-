@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 const subTodoSchema = new mongoose.Schema(
     {
         content: {
-            tyoe: String,
-            required: trusted
+            type: String,
+            required: true
         },
         complete: {
             type: Boolean,
