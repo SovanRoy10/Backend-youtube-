@@ -6,6 +6,7 @@ const app = express();
 //     res.send("Server is ready");
 // });
 
+
 // get a list of 5 jokes
 const jokes = [
     {
