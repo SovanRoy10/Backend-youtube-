@@ -2,9 +2,9 @@ import express from 'express';
 
 const app = express();
 
-// app.get('/', (req, res) => {
-//     res.send("Server is ready");
-// });
+app.get('/', (req, res) => {
+    res.send("Server is ready");
+});
 
 
 // get a list of 5 jokes
@@ -43,6 +43,7 @@ app.get('/api/jokes', (req, res) => {
 })
 
 const port = process.env.PORT || 3000;
+// in production it is neccessary to get process.env.PORT
 
 app.listen(port, () => {
     console.log(`Serve at http://localhost:${port}`);
